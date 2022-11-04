@@ -7,7 +7,7 @@ import NoPage from './components/NoPage';
 import './index.css';
 
 const App = () => (
-  <BrowserRouterRouter>
+  <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Books />} />
@@ -15,7 +15,7 @@ const App = () => (
         <Route path="*" element={<NoPage />} />
       </Route>
     </Routes>
-  </BrowserRouterRouter>
+  </BrowserRouter>
 );
 
 export default App;
