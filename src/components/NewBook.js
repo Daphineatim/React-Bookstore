@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const NewBook = ({
+function NewBook({
   title, author, status, chapter,
-}) => (
-  <>
+}) {
+  return (
     <div className="row container mx-auto mb-3 px-3 py-3 bg-white d-flex align-items-between justify-content-between">
       <div className="col-5 m-0 p-0">
         <div className="mx-0 mb-2 p-0">
@@ -34,8 +34,8 @@ const NewBook = ({
         </div>
       </div>
     </div>
-  </>
-);
+  );
+}
 
 NewBook.propTypes = {
   title: PropTypes.string.isRequired,

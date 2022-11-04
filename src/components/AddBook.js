@@ -1,7 +1,7 @@
 import React from 'react';
 
-const AddBook = () => (
-  <>
+function AddBook() {
+  return (
     <div className="container border-top my-0 p-0 ">
       <form className="form-box m-0 p-0">
         <p className="label">ADD NEW BOOK</p>
@@ -12,7 +12,7 @@ const AddBook = () => (
         </div>
       </form>
     </div>
-  </>
-);
+  );
+}
 
 export default AddBook;
