@@ -4,7 +4,7 @@ export const checkStatusAction = () => ({
   type: CHECK_STATUS,
 });
 
-const categoriesReducer = (state = '', action) => {
+const categoriesReducer = (state, action = '') => {
   const information = 'UNDER-CONSTRUCTION';
   switch (action.type) {
     case CHECK_STATUS:
