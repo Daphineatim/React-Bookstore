@@ -6,18 +6,16 @@ import NoPage from './components/NoPage';
 
 import './index.css';
 
-function App() {
-  return (
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Books />} />
-          <Route path="categories" element={<Categories />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </HashRouter>
-  );
-}
+const App = () => (
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Books />} />
+        <Route path="categories" element={<Categories />} />
+        <Route path="*" element={<NoPage />} />
+      </Route>
+    </Routes>
+  </HashRouter>
+);
 
 export default App;
