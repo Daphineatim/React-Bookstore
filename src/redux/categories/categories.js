@@ -10,7 +10,7 @@ export const checkStatusAction = () => ({
 const categoriesReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case CHECK_STATUS:
-      return action.type;
+      return action.payload;
     default:
       return state;
   }
