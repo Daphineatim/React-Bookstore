@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import NewBook from './NewBook';
 import AddBook from './AddBook';
 
-const Books = () => {
+function Books() {
   const bookList = useSelector((state) => state.booksReducer);
 
   return (
@@ -18,6 +18,6 @@ const Books = () => {
       <AddBook />
     </>
   );
-};
+}
 
 export default Books;
