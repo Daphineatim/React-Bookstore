@@ -2,9 +2,15 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import NewBook from './NewBook';
 import AddBook from './AddBook';
+import { fetchBookApiAction } from '../redux/books/books';
 
 function Books() {
   const bookList = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBookApiAction());
+  }, [dispatch]);
 
   return (
     <>
