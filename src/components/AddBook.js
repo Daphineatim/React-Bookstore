@@ -27,7 +27,7 @@ function AddBook() {
         <p className="label">ADD NEW BOOK</p>
         <div>
           <input type="text" name="title" placeholder="Book title" required value={title} onChange={(e) => setTitle(e.target.value)} />
-          <input type="text" name="author" placeholder="Author" required value={title} onChange={(e) => setTitle(e.target.value)} />
+          <input type="text" name="author" placeholder="Author" required value={author} onChange={(e) => setAuthor(e.target.value)} />
           <input onClick={addBookStore} className="btn1" type="submit" value="ADD BOOK" />
         </div>
       </form>

@@ -8,7 +8,7 @@ function NewBook({ book }) {
 
   const dispatch = useDispatch();
   const removeBookStore = () => {
-    dispatch(removeBookAction({ id }));
+    dispatch(removeBookAction(id));
   };
 
   return (

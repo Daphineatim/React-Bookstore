@@ -4,12 +4,12 @@ import NewBook from './NewBook';
 import AddBook from './AddBook';
 
 function Books() {
-  const bookList = useSelector((state) => state.booksReducer);
+  const bookList = useSelector((state) => state.books);
 
   return (
     <>
-      {bookList.length ? (
-        bookList.map((book) => <NewBook book={book} key={book.id} />)
+      {bookList?.length ? (
+        bookList?.map((book) => <NewBook book={book} key={book.id} />)
       ) : (
         <h3 className="container mx-auto mb-3 px-3 py-3 bg-white text-5">
           No books to show!
