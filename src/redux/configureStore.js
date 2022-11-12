@@ -9,4 +9,8 @@ const store = configureStore({
   },
 });
 
+// const rootReducer = combineReducers({ booksReducer, categoriesReducer });
+
+// const store = createStore(rootReducer, applyMiddleware(thunk));
+
 export default store;
