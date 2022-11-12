@@ -4,7 +4,7 @@ const ADD_BOOK = '/bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 const FETCH_BOOK = 'bookstore/books/FETCH_BOOK';
-const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/';
+const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/0mPLvjg0WhqcRBOP0m8m/books';
 
 const initialState = [];
 
@@ -49,7 +49,7 @@ export const removeBookApiAction = (id) => async (dispatch) => {
   dispatch(removeBookAction({ id }));
 };
 
-const booksReducer = (state = initialState, action) => {
+const booksReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case ADD_BOOK:
       return [...state, action.payload];
